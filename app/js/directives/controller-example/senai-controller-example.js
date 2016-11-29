@@ -14,8 +14,8 @@
                 },
                 controller: controller,
                 controllerAs: 'vm',
-                bindToController: true
-                //link: link
+                bindToController: true,
+                link: link
                 };
                 
 
@@ -36,6 +36,14 @@
                 vm.items.push({name: 'Novo Cliente'});
             }
 
+        }
+
+        function link(scope, iElement, iAttrs, ctrl) {
+            scope.$on('alterarListaClientes',onAlterarListaCliente);
+
+            function onAlterarListaCliente () {
+                ctrl.addItem();
+            }
         }
 
         // function link(scope,iElement, iAttrs) {

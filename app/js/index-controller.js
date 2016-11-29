@@ -14,12 +14,18 @@ function IndexController($rootScope, $scope, $timeout, $filter, SenaiSecuritySer
     $scope.addCliente = function(){
         console.log('function add');
     };
-    
+
+    $timeout( function() {
+        $scope.broadcast('alterarListaClientes'); //broadcast ou emit emit disparar para todos os escopos acima e o brodast abaixo;
+    }, 3000);
+
+
     
     $scope.user = {
         login: 'usuario'
     };
 
+    
     this.atualizarMensagemLogin = function(usuario) {
         $scope.mensagemLogin = 'Olá ' + usuario;
     };
