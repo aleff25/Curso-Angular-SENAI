@@ -1,0 +1,10 @@
+<div class="col-xs-{{::colspanXs}} col-sm-{{::colspanSm}} col-md-{{::colspanMd}} col-lg-{{::colspanLg}}" ng-form="inputTextForm">
+    <div class="form-group" ng-class="{'has-error': inputTextForm[inputName].$invalid}">
+        <i class="fa fa-envelope-o"></i>
+        <label ng-transclude=""></label>
+        <input type="text" class="form-control" ng-model="ngModel" name="{{::inputName}" senai-upper-case-text name="login" placeholder="{{::placeholder}}" ng-minlength="{{::minlength}}" ng-maxlength="{{::maxlength}}" onchange="" ng-required="ngRequired">
+        <div ng-messages="inputTextForm[inputName].$error">
+            <div ng-messages-include="app/html/mensagens-erro.html"></div>
+        </div>
+    </div>
+</div>
