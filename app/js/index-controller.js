@@ -1,9 +1,13 @@
 angular.module('MyApp')
     .controller('IndexController', IndexController);
 
-/* @Inject */
-function IndexController($rootScope, $scope, $timeout, $filter, SenaiSecurityService) {
+/* @ngInject */
+function IndexController($rootScope, $scope, $timeout, $filter, SenaiSecurityService, _) {
     $rootScope.nomeUsuarioLogado = 'Joaquim';
+
+
+    console.log(_.join(['a', 'b', 'c'],'-'));
+
 
     $scope.listaClientes = [
         {name: 'Fulano'},

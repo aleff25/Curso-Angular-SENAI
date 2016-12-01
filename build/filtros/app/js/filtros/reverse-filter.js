@@ -1,0 +1,1 @@
+function reverseFilter(){function a(a,b){a=a||"",b=!!angular.isUndefined(b)||b;for(var c="",d=0,e=a.length;d<e;d++)c=a.charAt(d)+c;return b&&(c=c.toUpperCase()),c}return a}angular.module("MyApp").filter("reverse",reverseFilter);

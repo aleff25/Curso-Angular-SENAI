@@ -1,5 +1,5 @@
 {
-  "name": "s",
+  "name": "curso angular",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +15,17 @@
   "bugs": {
     "url": "https://github.com/aleff25/Curso-Angular-SENAI/issues"
   },
-  "homepage": "https://github.com/aleff25/Curso-Angular-SENAI#readme"
+  "homepage": "https://github.com/aleff25/Curso-Angular-SENAI#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ngdocs": "^0.2.10",
+    "grunt-postcss": "^0.8.0"
+  },
+  "dependencies": {
+    "matchdep": "^1.0.1"
+  }
 }

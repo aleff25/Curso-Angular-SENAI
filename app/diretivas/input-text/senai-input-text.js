@@ -1,6 +1,19 @@
 (function() {
     'use strict';
-
+/**
+ * @ngdoc directive
+ * @name global.directive: senaiInputText
+ * @scope
+ * @restrict E
+ * 
+ * 
+ * @description
+ * Diretiva que permite um campo de texto no padrão bootstrap
+ * 
+ * @param {<object} ngModel Modeloque será alterado pelo input.
+ * @param {string } preffix Prefixo para ficará esquerda do input.
+ * 
+ */
     angular.module('SenaiUpperCaseTextDirective',[])
         .directive('senaiInputText', senaiInputText);
 

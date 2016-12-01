@@ -1,0 +1,1 @@
+!function(){"use strict";function a(){function a(a,b,c,d){function e(){d.$parsers.push(f)}function f(a){return a.toUpperCase()}e()}var b={restrict:"A",require:"ngModel",link:a};return b}angular.module("SenaiUppercaseParserDirective",[]).directive("senaiUppercaseParser",a)}();
